@@ -1,0 +1,68 @@
+* { 
+
+
+    display: block;
+}
+/* xml gyoker = html body lenyegeben */
+play{
+    background-color: ghostwhite;
+    margin: 1em;
+}
+
+author, title {
+    font-variant: small-caps;
+    text-align:center;
+}
+
+play > title {
+    font-size: xx-large;
+}
+
+author, play > title {
+    letter-spacing: 0.25em;
+}
+
+author, act > title {
+    font-size: x-large;
+}
+
+scene > title {
+    font-size: large;
+    border: thin solid red;
+}
+act {
+    border-top: 0.20em solid black;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+author {
+    padding-bottom: 1em;
+}
+
+speaker {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+line{
+    margin-left: 0.5em;
+}
+
+stagedir{
+    color:grey;
+    font-style: italic;
+    margin-left: 0.5em;
+}
+
+stagedir::before {
+    content: "(";
+}
+
+stagedir::after{
+    content: ")";
+}
+
+line > stagedir{
+    display: inline;
+}

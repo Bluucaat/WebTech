@@ -1,0 +1,20 @@
+tracks {
+    display: table;
+    counter-reset: track-number;
+}
+track > title::before{
+    content: counter(track-number) ".";
+    counter-increment: track-number;
+    display: inline-block;
+    width: 2em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+track {
+    display: table-row;
+}
+
+track > title, legend{
+    display: table-cell;
+}
