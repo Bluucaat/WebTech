@@ -1,6 +1,11 @@
+*{
+    display: block;
+}
+
 tracks {
     display: table;
     counter-reset: track-number;
+    width: 100%;
 }
 track > title::before{
     content: counter(track-number) ".";
@@ -17,4 +22,48 @@ track {
 
 track > title, legend{
     display: table-cell;
+}
+
+album > title, artist, year{
+    font-size: x-large;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+year::before{
+    content: "  (";
+}
+year::after {
+    content: ")";
+}
+
+artist::after{
+    content: " \2013 ";
+}
+
+length{
+    text-align: right;
+}
+
+album {
+    width: fit-content;
+    /* margin: 1em auto 1em auto; */
+    margin: 1em auto;
+    border: thin solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0.5em 0.5em 0.5em gray;
+}
+track:nth-child(odd){
+    background-color: whitesmoke;
+}
+
+/* 2n+1 -> vegyuk az elemet, nezzuk meg a % 2 == ?,t es +1-et adjunk hozza */
+track:nth-child(even){
+    background-color: white;
+}
+
+track:hover {
+    background-color: gold;
+    font-weight: bold;
 }

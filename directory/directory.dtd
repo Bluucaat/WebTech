@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ENTITY % foo "name CDATA #REQUIRED">
+<!ENTITY unideb "University of Debrecen"> <!-- &unideb; -->
+<!-- ezek nevesitett konstans-fele valamik -->
+<!-- rendes egyed ha nincs %, beegetheto a tartalomba -->
+
+
+<!ELEMENT directory (file | directory)*>
+<!ELEMENT file EMPTY>
+
+<!ATTLIST file 
+    %foo;
+    size CDATA #REQUIRED
+    >
+
+<!ATTLIST directory %foo;>
