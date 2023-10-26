@@ -1,0 +1,42 @@
+body{
+    width: 50%;
+    margin: 1em auto;
+    border: thin solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+header, nav{
+    margin: 1em;
+    padding: 1em;
+}
+
+header{
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+}
+
+a{
+    color: slateblue;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: slateblue;
+    color: white;
+}
+
+.stagedir{
+    font-style: italic;
+    color: gray;
+}
+
+div.speaker{
+
+}
+
+div.speech > div.line{
+    
+}
