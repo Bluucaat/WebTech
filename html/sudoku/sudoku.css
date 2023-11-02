@@ -1,0 +1,28 @@
+table td,table th{
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+table {
+    border: medium solid black;
+}
+
+
+
+table{
+    margin: 1em auto;
+    border-spacing: 0;
+}
+
+table td:nth-child(3), table td:nth-child(6){
+    border-right: black solid medium;
+}
+
+table tr:nth-child(4) > td, table tr:nth-child(7) > td{
+    border-top: black solid medium;
+}
+
+table td{
+    border: 0.01em solid grey
+}
